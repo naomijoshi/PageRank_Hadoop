@@ -1,0 +1,37 @@
+group 'com.pagerank'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "com.pagerank.WikiPageRank"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.apache.hadoop:hadoop-common:2.7.3"
+    compile "org.apache.hadoop:hadoop-hdfs:2.7.3"
+    compile "org.apache.hadoop:hadoop-client:2.7.3"
+    compile "org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.7.3"
+}
+
+
+sourceSets {
+    main {
+        java {
+            srcDir './'
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'com.pagerank.WikiPageRank'
+        )
+    }
+}

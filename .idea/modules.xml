@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PageRank.iml" filepath="$PROJECT_DIR$/.idea/modules/PageRank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PageRank_main.iml" filepath="$PROJECT_DIR$/.idea/modules/PageRank_main.iml" group="PageRank" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PageRank_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PageRank_test.iml" group="PageRank" />
+    </modules>
+  </component>
+</project>
